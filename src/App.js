@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 import Layout from "./components/Layout/Layout"
+import BurggerBuilder from "./containers/BurggerBuilder/BurggerBuilder"
+
 class App extends Component {
   render() {
     return (
@@ -9,10 +11,7 @@ class App extends Component {
       <div >
       <Layout>
 
-        <p>
-
-          Hello I am from test 
-        </p>
+      <BurggerBuilder />
       </Layout>
       </div>
     );
