@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import { classes } from "./BurggerIngredient.css"
 
-const BurggerIngridient = (props) => {
+class BurggerIngridient  extends Component {
+    render () {
 
-    /* 
-        return something
-    */
+   
     let ingredient = null;
     switch (props.type) {
         case ('bread-bottom'):
@@ -40,7 +40,9 @@ const BurggerIngridient = (props) => {
 
     return ingredient;
 }
-
+}
 /*  export something  you want to use in other file  */
-
+BurggerIngridient.propTypes = {
+    type: PropTypes.string.isRequired
+};
 export default BurggerIngridient;
